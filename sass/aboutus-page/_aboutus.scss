@@ -1,0 +1,89 @@
+.aboutus {
+  margin-top: 40px;
+
+  &__content {
+    display: flex;
+    gap: 50px;
+  }
+
+  &-left {
+    padding: 50px;
+    border-radius: 20px;
+    background-color: #f5f5f5;
+  }
+
+  &-right {
+    img {
+      border-radius: 20px;
+    }
+  }
+
+  &-title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+  }
+
+  &-descr {
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+// mission
+
+.mission {
+  margin-top: 90px;
+
+  &-purpose {
+    display: flex;
+    gap: 32px;
+
+    &-item {
+      flex: 1;
+      padding: 40px;
+      border: 1px solid #4f4f4f;
+      border-radius: 20px;
+
+      .title {
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 53px;
+      }
+
+      .descr {
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #273953;
+      }
+    }
+  }
+
+  &-principle {
+    margin-top: 32px;
+    padding: 40px;
+    background-color: #f3d07b;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    .title {
+      font-weight: 600;
+      font-size: 35px;
+      line-height: 53px;
+    }
+
+    .descr {
+      margin-top: 10px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #273953;
+    }
+  }
+}
