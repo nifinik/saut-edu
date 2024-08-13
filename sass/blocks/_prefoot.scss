@@ -1,0 +1,70 @@
+// prefoot section
+
+.prefoot {
+  margin-top: 40px;
+
+  &-up {
+    padding: 36px 32px;
+    border-radius: 16px;
+    background-color: #f5f5f5;
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    align-items: center;
+
+    &-title {
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 30px;
+      max-width: 190px;
+    }
+
+    &-middle {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+  }
+
+  &-item {
+    flex: 1 1 210px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #898989;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #292929;
+  }
+
+  &-down {
+    margin-top: 40px;
+    padding: 36px 32px;
+    border-radius: 16px;
+    background-color: #f3d07b;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+  }
+}
+
+// Media
+
+@media (max-width: 1200px) {
+  .prefoot {
+    &-up {
+      align-items: start;
+    }
+  }
+}
+
+@media (max-width: 816px) {
+  .prefoot {
+    &-up {
+      flex-direction: column;
+    }
+
+    &-down {
+      flex-direction: column;
+    }
+  }
+}

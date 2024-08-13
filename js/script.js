@@ -16,3 +16,42 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+$(document).ready(function () {
+  // slaider reaches
+  $(".sertificates__items").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    prevArrow: '<button type="button" class="slick-prev">Prev</button>',
+    nextArrow: '<button type="button" class="slick-next">Next</button>',
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          centerMode: true,
+          centerPadding: "40px",
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          centerMode: true,
+          centerPadding: "20px",
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+
+  $("[data-modal = modalka]").on("click", function () {
+    $("#myModal").fadeIn();
+  });
+
+  $(".close").on("click", function () {
+    $("#myModal").fadeOut();
+  });
+});

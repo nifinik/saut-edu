@@ -1,0 +1,95 @@
+// about us -- About-us page
+
+.aboutus {
+  margin-top: 40px;
+
+  &__content {
+    display: flex;
+    gap: 50px;
+  }
+
+  &-left {
+    padding: 50px;
+    border-radius: 20px;
+    background-color: #f5f5f5;
+  }
+
+  &-right {
+    img {
+      border-radius: 20px;
+    }
+  }
+
+  &-title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+  }
+
+  &-descr {
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .aboutus {
+    &__content {
+      gap: 32px;
+    }
+
+    &-left {
+      padding: 32px;
+      flex: 1;
+    }
+
+    &-right {
+      flex: 1;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .aboutus {
+    &__content {
+      flex-direction: column-reverse;
+    }
+
+    &-left {
+      padding: 32px;
+      flex: 1;
+    }
+
+    &-right {
+      flex: 1;
+      img {
+        width: 400px;
+      }
+    }
+  }
+}
+
+@media (max-width: 456px) {
+  .aboutus {
+    &__content {
+      flex-direction: column-reverse;
+    }
+
+    &-left {
+      padding: 32px;
+      flex: 1;
+    }
+
+    &-right {
+      flex: 1;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

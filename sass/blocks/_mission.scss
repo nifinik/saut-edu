@@ -1,38 +1,4 @@
-.aboutus {
-  margin-top: 40px;
-
-  &__content {
-    display: flex;
-    gap: 50px;
-  }
-
-  &-left {
-    padding: 50px;
-    border-radius: 20px;
-    background-color: #f5f5f5;
-  }
-
-  &-right {
-    img {
-      border-radius: 20px;
-    }
-  }
-
-  &-title {
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 53px;
-  }
-
-  &-descr {
-    margin-top: 24px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
-
-// mission
+// mission -- About-us page
 
 .mission {
   margin-top: 90px;
@@ -84,6 +50,35 @@
       font-size: 16px;
       line-height: 24px;
       color: #273953;
+    }
+  }
+}
+
+@media (max-width: 748px) {
+  .mission {
+    &-purpose {
+      flex-wrap: wrap;
+
+      &-item {
+        flex: 1 1 340px;
+        padding: 24px;
+      }
+    }
+
+    &-right {
+      &-down {
+        gap: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 658px) {
+  .mission {
+    &-principle {
+      flex-direction: column;
+      align-items: start;
+      padding: 32px;
     }
   }
 }

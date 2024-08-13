@@ -1,0 +1,169 @@
+// tab section
+
+.tab {
+  margin-top: 90px;
+
+  &-content {
+    .tabs {
+      margin-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+  }
+
+  &-button {
+    cursor: pointer;
+    padding: 10px 10px;
+    border: none;
+    background: transparent;
+    margin-right: 5px;
+    transition: background-color 0.3s;
+    border-bottom: 2px solid #909090;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #292929;
+  }
+
+  &-button.active {
+    border-bottom: 2px solid #f4d07b;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: #273953;
+  }
+
+  &-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+    align-items: center;
+  }
+
+  &-page {
+    margin-top: 20px;
+  }
+
+  &-panel {
+    display: none;
+
+    &-content {
+      padding-top: 40px;
+      display: flex;
+      gap: 72px;
+      justify-content: space-between;
+      align-items: start;
+
+      &-title {
+        margin-top: 36px;
+        display: inline-block;
+        font-weight: 700;
+        font-size: 40px;
+        color: #273953;
+        padding: 0 0 10px 0;
+        border-bottom: 4px solid #273953;
+      }
+
+      &-descr {
+        margin-top: 24px;
+        font-size: 24px;
+        line-height: 33px;
+        color: #292929;
+      }
+
+      &-right {
+        img {
+          border-radius: 16px;
+        }
+      }
+    }
+  }
+
+  &-panel.active {
+    display: block;
+  }
+}
+
+// Media
+
+@media (max-width: 940px) {
+  .tab {
+    &-panel {
+      &-content {
+        gap: 32px;
+
+        &-title {
+          margin-top: 0;
+        }
+
+        &-right {
+          img {
+            max-width: 400px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 940px) {
+  .tab {
+    &-panel {
+      &-content {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .tab {
+    .tabs {
+      overflow: auto;
+    }
+  }
+}
+
+@media (max-width: 448px) {
+  .tab {
+    &-panel {
+      &-content {
+        &-right {
+          img {
+            width: 100%;
+          }
+        }
+
+        &-descr {
+          font-size: 18px;
+        }
+      }
+    }
+    &-content {
+      .tabs {
+        margin-top: 24px;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+      }
+    }
+
+    &-button {
+      transition: background-color 0.3s;
+      border-bottom: 2px solid #909090;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 20px;
+      color: #292929;
+    }
+
+    &-button.active {
+      border-bottom: 2px solid #f4d07b;
+      font-weight: 600;
+      line-height: 20px;
+      font-size: 14px;
+      color: #273953;
+    }
+  }
+}

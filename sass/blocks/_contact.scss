@@ -6,17 +6,20 @@
     align-items: start;
     gap: 36px;
     height: 360px;
+    flex-wrap: wrap;
   }
 
   &-left {
     height: 100%;
     flex: 0.9;
-    padding: 48px 32px;
+    padding: 0 32px;
     border-radius: 16px;
     background-color: #f5f5f5;
+    flex: 1 1 380px;
   }
 
   &-title {
+    margin-top: 48px;
     font-weight: 700;
     font-size: 40px;
     line-height: 48px;
@@ -25,6 +28,7 @@
   &-right {
     height: 100% !important;
     flex: 1.1;
+    flex: 1 1 380px;
 
     iframe {
       height: 100%;
@@ -43,6 +47,18 @@
       display: flex;
       align-items: center;
       gap: 16px;
+    }
+  }
+}
+
+@media (max-width: 901px) {
+  .contact {
+    &__content {
+      height: auto;
+    }
+
+    &-items {
+      margin-bottom: 32px;
     }
   }
 }

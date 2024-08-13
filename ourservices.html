@@ -10,21 +10,102 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.min.css" />
-    <title>ourservices</title>
+    <title>Saut education</title>
   </head>
   <body>
+    <div class="menu">
+      <div class="menu__block">
+        <div class="menu__close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            viewBox="0 0 1024 1024"
+          >
+            <path
+              fill="black"
+              fill-rule="evenodd"
+              d="M799.855 166.312c.023.007.043.018.084.059l57.69 57.69c.041.041.052.06.059.084a.1.1 0 0 1 0 .069c-.007.023-.018.042-.059.083L569.926 512l287.703 287.703c.041.04.052.06.059.083a.12.12 0 0 1 0 .07c-.007.022-.018.042-.059.083l-57.69 57.69c-.041.041-.06.052-.084.059a.1.1 0 0 1-.069 0c-.023-.007-.042-.018-.083-.059L512 569.926L224.297 857.629c-.04.041-.06.052-.083.059a.12.12 0 0 1-.07 0c-.022-.007-.042-.018-.083-.059l-57.69-57.69c-.041-.041-.052-.06-.059-.084a.1.1 0 0 1 0-.069c.007-.023.018-.042.059-.083L454.073 512L166.371 224.297c-.041-.04-.052-.06-.059-.083a.12.12 0 0 1 0-.07c.007-.022.018-.042.059-.083l57.69-57.69c.041-.041.06-.052.084-.059a.1.1 0 0 1 .069 0c.023.007.042.018.083.059L512 454.073l287.703-287.702c.04-.041.06-.052.083-.059a.12.12 0 0 1 .07 0Z"
+            />
+          </svg>
+        </div>
+        <nav>
+          <ul class="header__nav">
+            <li>
+              <a href="index.html" class="nav-link" data-page="index"
+                >Главная</a
+              >
+            </li>
+            <li>
+              <a href="aboutus.html" class="nav-link" data-page="aboutus"
+                >Обо мне</a
+              >
+            </li>
+            <li>
+              <a
+                href="ourservices.html"
+                class="nav-link"
+                data-page="ourservices"
+                >Услуги</a
+              >
+            </li>
+            <li>
+              <a href="contact.html" class="nav-link" data-page="contact"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="menu__overlay"></div>
+    </div>
+
     <header class="header">
       <div class="container">
         <div class="header__content">
           <div class="header__logo">
             <img src="img/logo.svg" alt="logo" />
           </div>
-          <nav class="header__nav">
-            <a href="index.html">Главная</a>
-            <a href="aboutus.html">Обо мне</a>
-            <a href="ourservices.html">Услуги</a>
-            <a href="contact.html">Контакты</a>
+          <nav>
+            <ul class="header__nav">
+              <li>
+                <a href="index.html" class="nav-link" data-page="index"
+                  >Главная</a
+                >
+              </li>
+              <li>
+                <a href="aboutus.html" class="nav-link" data-page="aboutus"
+                  >Обо мне</a
+                >
+              </li>
+              <li>
+                <a
+                  href="ourservices.html"
+                  class="nav-link"
+                  data-page="ourservices"
+                  >Услуги</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="nav-link" data-page="contact"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
           </nav>
+          <div class="hamburger">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              viewBox="0 0 1024 1024"
+            >
+              <path
+                fill="black"
+                d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8m0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8m0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8"
+              />
+            </svg>
+          </div>
           <a href="#">
             <div class="header__contact">
               <img src="img/icons/contact-icon.svg" alt="contact-icon" />
@@ -55,7 +136,9 @@
                   <div class="info">Флэш карты</div>
                 </div>
               </div>
-              <div class="btn services-btn">Консультация</div>
+              <button data-modal="modalka" class="btn services-btn">
+                Консультация
+              </button>
             </div>
             <div class="item">
               <div class="item-info">
@@ -74,7 +157,9 @@
                   <div class="info">Флэш карты</div>
                 </div>
               </div>
-              <div class="btn services-btn">Консультация</div>
+              <button data-modal="modalka" class="btn services-btn">
+                Консультация
+              </button>
             </div>
             <div class="item">
               <div class="item-info">
@@ -91,7 +176,9 @@
                   <div class="info">Флэш карты</div>
                 </div>
               </div>
-              <div class="btn services-btn">Консультация</div>
+              <button data-modal="modalka" class="btn services-btn">
+                Консультация
+              </button>
             </div>
           </div>
         </div>
@@ -113,7 +200,7 @@
             <div class="prefoot-item">Поддержка при подаче заявлений</div>
           </div>
           <div class="prefoot-btn">
-            <button class="btn">Консультация</button>
+            <button data-modal="modalka" class="btn">Консультация</button>
           </div>
         </div>
         <div class="prefoot-down">
@@ -127,7 +214,7 @@
             </div>
           </div>
           <div class="prefoot-btn">
-            <button class="btn">Консультация</button>
+            <button data-modal="modalka" class="btn">Консультация</button>
           </div>
         </div>
       </div>
@@ -177,5 +264,55 @@
         </div>
       </div>
     </footer>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="consultation__content">
+          <span class="close">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 1024 1024"
+            >
+              <path
+                fill="white"
+                fill-rule="evenodd"
+                d="M799.855 166.312c.023.007.043.018.084.059l57.69 57.69c.041.041.052.06.059.084a.1.1 0 0 1 0 .069c-.007.023-.018.042-.059.083L569.926 512l287.703 287.703c.041.04.052.06.059.083a.12.12 0 0 1 0 .07c-.007.022-.018.042-.059.083l-57.69 57.69c-.041.041-.06.052-.084.059a.1.1 0 0 1-.069 0c-.023-.007-.042-.018-.083-.059L512 569.926L224.297 857.629c-.04.041-.06.052-.083.059a.12.12 0 0 1-.07 0c-.022-.007-.042-.018-.083-.059l-57.69-57.69c-.041-.041-.052-.06-.059-.084a.1.1 0 0 1 0-.069c.007-.023.018-.042.059-.083L454.073 512L166.371 224.297c-.041-.04-.052-.06-.059-.083a.12.12 0 0 1 0-.07c.007-.022.018-.042.059-.083l57.69-57.69c.041-.041.06-.052.084-.059a.1.1 0 0 1 .069 0c.023.007.042.018.083.059L512 454.073l287.703-287.702c.04-.041.06-.052.083-.059a.12.12 0 0 1 .07 0Z"
+              />
+            </svg>
+          </span>
+          <div class="consultation-data">
+            <div class="consultation-title">Заказать консультацию</div>
+            <div class="consultation-subtitle">
+              Заполните эту форму и мы свяжемся с вами в кратчайшие сроки, чтобы
+              обсудить детали и ответить на все ваши вопросы.
+            </div>
+            <div class="consultation-inputs">
+              <input type="text" placeholder="Ваше имя *" />
+              <input type="text" placeholder="+7" />
+            </div>
+            <button class="btn consultation-btn">Свяжитесь со мной</button>
+          </div>
+          <div class="consultation-img">
+            <img src="img/consultation-img.png" alt="consultation-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>
